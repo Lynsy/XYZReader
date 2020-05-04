@@ -7,4 +7,7 @@
 
     <dimen name="list_item_header">32sp</dimen>
     <dimen name="list_item_body">21sp</dimen>
+
+    <dimen name="list_item_body_spacing_edges">16dp</dimen>
+    <dimen name="list_item_body_spacing_bottom">8dp</dimen>
 </resources>

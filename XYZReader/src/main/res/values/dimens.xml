@@ -11,4 +11,7 @@
     <dimen name="list_item_header">16sp</dimen>
     <dimen name="list_item_body">12sp</dimen>
 
+    <dimen name="list_item_body_spacing_edges">8dp</dimen>
+    <dimen name="list_item_body_spacing_bottom">4dp</dimen>
+
 </resources>
