@@ -18,11 +18,33 @@
 <resources>
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorPrimaryDark">@color/theme_primary_dark</item>
+        <item name="colorAccent">@color/theme_accent</item>
+        <item name="android:textColor">@color/primaryText</item>
     </style>
 
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
+    <style name="ItemHeader">
+        <item name="android:textSize">@dimen/list_item_header</item>
+        <item name="android:textColor">@color/ltgray</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="ItemBody">
+        <item name="android:textSize">@dimen/list_item_body</item>
+        <item name="android:textColor">@color/ltgray</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
 
 </resources>
