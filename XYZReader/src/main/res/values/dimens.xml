@@ -14,4 +14,6 @@
     <dimen name="list_item_body_spacing_edges">8dp</dimen>
     <dimen name="list_item_body_spacing_bottom">4dp</dimen>
 
+    <dimen name="toolbar_height">112dp</dimen>
+
 </resources>

@@ -64,7 +64,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
 
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
+//        final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
@@ -153,13 +153,13 @@ public class ArticleListActivity extends AppCompatActivity implements
                     final Intent goToDetailsIntent = new Intent(Intent.ACTION_VIEW,
                             ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
 
-//                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-//                        ActivityOptionsCompat options = ActivityOptionsCompat.
-//                                makeSceneTransitionAnimation(ArticleListActivity.this, view, "detail");
-//                        startActivity(goToDetailsIntent, options.toBundle());
-//                    } else {
+                    if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                        ActivityOptionsCompat options = ActivityOptionsCompat.
+                                makeSceneTransitionAnimation(ArticleListActivity.this, view, "detail");
+                        startActivity(goToDetailsIntent, options.toBundle());
+                    } else {
                         startActivity(goToDetailsIntent);
-//                    }
+                    }
                 }
             });
             return vh;
